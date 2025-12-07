@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Belt Capstone Project - PDF Ready</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: white;
+        }
+        .container {
+            max-width: 8.5in;
+            height: 11in;
+            margin: 0.5in auto;
+            padding: 0.75in;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 24px;
+            color: #1a5490;
+            margin: 20px 0 10px 0;
+            border-bottom: 2px solid #1a5490;
+            padding-bottom: 8px;
+        }
+        h2 {
+            font-size: 18px;
+            color: #2c5aa0;
+            margin: 16px 0 8px 0;
+            border-left: 4px solid #2c5aa0;
+            padding-left: 10px;
+        }
+        h3 {
+            font-size: 14px;
+            color: #333;
+            margin: 12px 0 6px 0;
+            font-weight: bold;
+        }
+        p {
+            margin: 8px 0;
+            font-size: 11px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 10px;
+        }
+        th {
+            background-color: #1a5490;
+            color: white;
+            padding: 6px;
+            text-align: left;
+            font-weight: bold;
+        }
+        td {
+            padding: 5px 6px;
+            border: 1px solid #ddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .header-info {
+            background-color: #f0f4f8;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #1a5490;
+            font-size: 10px;
+        }
+        .box {
+            border: 1px solid #ddd;
+            padding: 8px;
+            margin: 8px 0;
+            background: #f9f9f9;
+            font-size: 10px;
+        }
+        .page-break {
+            page-break-after: always;
+        }
+        ul, ol {
+            margin-left: 20px;
+            font-size: 10px;
+        }
+        li {
+            margin: 4px 0;
+        }
+        .checkmark {
+            color: green;
+            font-weight: bold;
+        }
+        .highlight {
+            background-color: #fffacd;
+            padding: 2px 4px;
+        }
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0.5in;
+                box-shadow: none;
+            }
+            .page-break {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- TITLE PAGE -->
+<div style="text-align: center; margin-top: 40px;">
+    <h1 style="border: none; font-size: 28px; margin: 20px 0;">GREEN BELT CAPSTONE PROJECT</h1>
+    <hr style="margin: 30px 0; border: none; border-top: 2px solid #1a5490;">
+    <p style="font-size: 12px; margin: 15px 0;"><strong>Project Title:</strong> Reducing Student Onboarding Time at TISS Mumbai</p>
+    <p style="font-size: 12px; margin: 10px 0;"><strong>Project Lead:</strong> Aditya Kalambe</p>
+    <p style="font-size: 12px; margin: 10px 0;"><strong>Date Initiated:</strong> December 2025</p>
+    <p style="font-size: 12px; margin: 10px 0;"><strong>Target Completion:</strong> March 2026</p>
+    <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+</div>
+
+<!-- DOCUMENT 1: PROJECT CHARTER -->
+<h1>DOCUMENT 1: PROJECT CHARTER</h1>
+
+<div class="header-info">
+    <strong>Project Sponsor:</strong> Dean of Student Services<br>
+    <strong>Green Belt Lead:</strong> Aditya Kalambe<br>
+    <strong>Date Initiated:</strong> December 2025 | <strong>Target Completion:</strong> March 2026
+</div>
+
+<h2>1. PROBLEM STATEMENT</h2>
+<p>New students at TISS take an average of <strong>14-21 days</strong> to complete onboarding. Target completion time: <strong>7-10 days</strong>. This delay impacts student satisfaction and administrative productivity. Current process has no standardized workflow, causing <strong>18% of students to repeat steps</strong> due to incomplete submissions.</p>
+
+<div class="box">
+    <strong>Current Baseline:</strong><br>
+    • Average Time: 18 days<br>
+    • Process Delays: 18% rework rate<br>
+    • Manual Touchpoints: 8 departments<br>
+    • Staff Frustration: High
+</div>
+
+<h2>2. BUSINESS CASE</h2>
+<table>
+    <tr><th>Impact Area</th><th>Details</th></tr>
+    <tr><td>Student Satisfaction</td><td>Quick onboarding improves retention & satisfaction by 25-30%</td></tr>
+    <tr><td>Cost Reduction</td><td>Rework costs ₹45K/year; streamlined process saves ₹18K/year (40%)</td></tr>
+    <tr><td>Staff Efficiency</td><td>Reduces administrative burden by 12 hours/cohort</td></tr>
+    <tr><td>Competitive Advantage</td><td>Faster onboarding attracts students, improves TISS reputation</td></tr>
+</table>
+
+<h2>3. GOAL STATEMENT (SMART)</h2>
+<p><strong>Primary:</strong> Reduce onboarding time from <span class="highlight">18 days → 8 days</span> by March 2026 while maintaining 100% accuracy and improving student satisfaction to <span class="highlight">4.2/5.0</span>.</p>
+<p><strong>Secondary Goals:</strong></p>
+<ul>
+    <li>Reduce rework rate from 18% to <5%</li>
+    <li>Standardize workflow across 8 departments</li>
+    <li>Achieve 95% first-contact resolution rate</li>
+</ul>
+
+<h2>4. IMPROVEMENT GOALS - MEASURES OF SUCCESS</h2>
+<table>
+    <tr><th>Metric</th><th>Current</th><th>Target</th><th>Timeline</th></tr>
+    <tr><td>Onboarding Time</td><td>18 days</td><td>8 days</td><td>March 2026</td></tr>
+    <tr><td>Rework Rate</td><td>18%</td><td>&lt;5%</td><td>February 2026</td></tr>
+    <tr><td>Student Satisfaction</td><td>3.1/5.0</td><td>4.2/5.0</td><td>March 2026</td></tr>
+    <tr><td>First-Contact Resolution</td><td>82%</td><td>95%</td><td>March 2026</td></tr>
+</table>
+
+<h2>5. PROCESS DESCRIPTION</h2>
+<p>Current process involves: (1) Document Verification (Admissions), (2) ID Creation (Administration), (3) Course Registration (Academics), (4) Hostel Assignment (Hostel Office), (5) Orientation (Student Services). Each step is manual, requires multiple touchpoints, and has <strong>no integration</strong> between departments. Students navigate without clear guidance or timeline.</p>
+
+<h2>6. PROJECT SCOPE</h2>
+<p><strong>In Scope:</strong> Document verification to hostel assignment, new student intake for all programs, digital workflow design, staff training.</p>
+<p><strong>Out of Scope:</strong> Curriculum changes, infrastructure improvements, hostel capacity expansion, alumni services.</p>
+
+<h2>7. KEY STAKEHOLDERS</h2>
+<table>
+    <tr><th>Stakeholder</th><th>Interest</th><th>Role</th></tr>
+    <tr><td>Dean of Students</td><td>Cost reduction, satisfaction</td><td>Sponsor</td></tr>
+    <tr><td>Admissions Office</td><td>Process efficiency</td><td>Process owner</td></tr>
+    <tr><td>Administrative Staff</td><td>Reduced workload</td><td>Participants</td></tr>
+    <tr><td>Students</td><td>Fast, clear process</td><td>Customers</td></tr>
+    <tr><td>IT Department</td><td>System integration</td><td>Technical support</td></tr>
+</table>
+
+<h2>8. TEAM MEMBERS (4+)</h2>
+<ol>
+    <li><strong>[Your Name]</strong> - Green Belt Project Lead (Analytics)</li>
+    <li><strong>Ms. Priya Sharma</strong> - Admissions Office Head (Process Owner)</li>
+    <li><strong>Mr. Rajesh Kumar</strong> - IT Coordinator (Systems)</li>
+    <li><strong>Ms. Neha Patel</strong> - Hostel Office Manager (Process Step Owner)</li>
+    <li><strong>Student Representative</strong> - Voice of Customer</li>
+</ol>
+
+<h2>9. PROJECT TIMELINE</h2>
+<table>
+    <tr><th>Phase</th><th>Milestone</th><th>Duration</th><th>Target Date</th></tr>
+    <tr><td>Define</td><td>Charter approved</td><td>2 weeks</td><td>Dec 15, 2025</td></tr>
+    <tr><td>Measure</td><td>Data collection</td><td>3 weeks</td><td>Jan 5, 2026</td></tr>
+    <tr><td>Analyze</td><td>Root causes identified</td><td>2 weeks</td><td>Jan 19, 2026</td></tr>
+    <tr><td>Improve</td><td>Solution piloted</td><td>4 weeks</td><td>Feb 16, 2026</td></tr>
+    <tr><td>Control</td><td>Process stabilized</td><td>3 weeks</td><td>Mar 9, 2026</td></tr>
+    <tr><td>Closure</td><td>Lessons documented</td><td>1 week</td><td>Mar 16, 2026</td></tr>
+</table>
+
+</div>
+<div class="page-break"></div>
+
+<!-- DOCUMENT 2: TEAM CHARTER -->
+<h1>DOCUMENT 2: TEAM CHARTER</h1>
+
+<p><strong>Team Name:</strong> TISS Onboarding Excellence Team | <strong>Project:</strong> Reducing Student Onboarding Time</p>
+
+<h2>1. TEAM EXPECTATIONS & GROUND RULES</h2>
+<p><strong>Attendance:</strong> 100% attendance at Tuesday 2:00-3:00 PM weekly meetings. Come prepared with completed tasks.</p>
+<p><strong>Communication:</strong> Slack channel #onboarding-project for daily updates. Weekly meetings for decisions. Email for announcements only. 24-hour response time.</p>
+<p><strong>Decision-Making:</strong> Consensus when possible. If stuck: Green Belt Lead decides. Escalate conflicts to Project Sponsor. Document all major decisions.</p>
+
+<h2>2. TEAM ROLES & RESPONSIBILITIES</h2>
+<table>
+    <tr><th>Role</th><th>Name</th><th>Key Responsibilities</th></tr>
+    <tr><td>Green Belt Lead</td><td>[Your Name]</td><td>Project coordination, DMAIC execution, analysis</td></tr>
+    <tr><td>Process Owner</td><td>Ms. Priya Sharma</td><td>Admissions workflow input, staff coordination</td></tr>
+    <tr><td>Systems Lead</td><td>Mr. Rajesh Kumar</td><td>IT integration, digital solution design</td></tr>
+    <tr><td>Hostel Owner</td><td>Ms. Neha Patel</td><td>Hostel process, departmental coordination</td></tr>
+    <tr><td>Data Collector</td><td>[Team Member]</td><td>Survey distribution, data entry, baseline</td></tr>
+</table>
+
+<h2>3. TEAM VALUES</h2>
+<ul>
+    <li><strong>Respect:</strong> Honor each department's constraints and viewpoints</li>
+    <li><strong>Data-Driven:</strong> Decisions based on facts, not opinions</li>
+    <li><strong>Ownership:</strong> Each member owns their assigned tasks</li>
+    <li><strong>Transparency:</strong> Open communication about challenges</li>
+    <li><strong>Continuous Learning:</strong> Share knowledge and best practices</li>
+</ul>
+
+<h2>4. CONFLICT RESOLUTION</h2>
+<ol>
+    <li>Address issues in team meetings openly</li>
+    <li>If unresolved: Meet one-on-one with parties involved</li>
+    <li>If still unresolved: Escalate to Project Sponsor</li>
+    <li>No blame culture; focus on solutions</li>
+</ol>
+
+<h2>5. SUCCESS CRITERIA FOR TEAM</h2>
+<ul>
+    <li><span class="checkmark">✓</span> Complete project on time (by March 16, 2026)</li>
+    <li><span class="checkmark">✓</span> Achieve all 4 improvement goals</li>
+    <li><span class="checkmark">✓</span> Get buy-in from all 8 departments</li>
+    <li><span class="checkmark">✓</span> Sustain improvements for 3 months post-launch</li>
+</ul>
+
+<div class="page-break"></div>
+
+<!-- DOCUMENT 3: DATA COLLECTION PLAN -->
+<h1>DOCUMENT 3: DATA COLLECTION PLAN</h1>
+
+<h2>1. WHAT WILL WE MEASURE?</h2>
+<table>
+    <tr><th>Metric</th><th>Definition</th><th>Why Important</th></tr>
+    <tr><td>Onboarding Time</td><td>Calendar days from submission to completion</td><td>Directly impacts satisfaction</td></tr>
+    <tr><td>Rework Rate</td><td>% of students repeating any step</td><td>Indicates process quality</td></tr>
+    <tr><td>Student Satisfaction</td><td>1-5 score on experience</td><td>Measures customer perception</td></tr>
+    <tr><td>Handoff Time</td><td>Days between step completion & next start</td><td>Identifies bottlenecks</td></tr>
+    <tr><td>Staff Effort</td><td>Total hours per student</td><td>Indicates efficiency</td></tr>
+</table>
+
+<h2>2. DATA TYPE</h2>
+<table>
+    <tr><th>Metric</th><th>Type</th><th>Collection Method</th></tr>
+    <tr><td>Onboarding Time</td><td>Measurement (Continuous)</td><td>System timestamps, tracking sheet</td></tr>
+    <tr><td>Rework Rate</td><td>Count (Discrete)</td><td>Process logs, staff reports</td></tr>
+    <tr><td>Student Satisfaction</td><td>Ordinal (Rating 1-5)</td><td>Online survey (Google Form)</td></tr>
+    <tr><td>Handoff Time</td><td>Measurement (Continuous)</td><td>Department tracking, timestamps</td></tr>
+    <tr><td>Staff Effort</td><td>Measurement (Continuous)</td><td>Time tracking, staff logs</td></tr>
+</table>
+
+<h2>3. COLLECTION SCHEDULE</h2>
+<p><strong>Baseline Period:</strong> December 2025 - January 2026</p>
+<ul>
+    <li>Sample: 50 new students (100% of incoming cohort)</li>
+    <li>Duration: 4 weeks continuous tracking</li>
+    <li>Frequency: Daily real-time entry</li>
+    <li>Responsibility: Ms. Priya Sharma + Data Collector</li>
+</ul>
+
+<h2>4. DATA COLLECTION METHODS</h2>
+<ol>
+    <li><strong>System Data:</strong> Automated timestamps from registration system</li>
+    <li><strong>Manual Logs:</strong> Spreadsheet tracking by each department</li>
+    <li><strong>Survey:</strong> Post-completion satisfaction survey (email link)</li>
+    <li><strong>Interviews:</strong> 5 random student interviews</li>
+    <li><strong>Observations:</strong> Process walkthroughs to verify data</li>
+</ol>
+
+<h2>5. SAMPLE SIZE & QUALITY ASSURANCE</h2>
+<p><strong>Sample:</strong> 50 students, 4 weeks, 8-10 touchpoints each = ~450-500 total data points</p>
+<p><strong>Quality Checks:</strong> Weekly validation, system records as primary source, verify with department heads, de-identify student data (ID numbers only).</p>
+
+<div class="page-break"></div>
+
+<!-- DOCUMENT 4: PROCESS MAP -->
+<h1>DOCUMENT 4: PROCESS MAP</h1>
+
+<h2>CURRENT STATE PROCESS MAP (AS-IS)</h2>
+<div class="box" style="font-family: monospace; font-size: 9px; line-height: 1.4;">
+START (Application Submitted)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+[1] ADMISSIONS VERIFICATION - 4 days (8% rework)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;↓ [Wait: 2 days]<br>
+[2] ID CARD CREATION - 2.5 days (3% rework)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;↓ [Wait: 1 day]<br>
+[3] COURSE REGISTRATION - 3.5 days (6% rework)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;↓ [Wait: 1.5 days]<br>
+[4] HOSTEL ASSIGNMENT - 2 days (1% rework)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;↓ [Wait: 0.5 days]<br>
+[5] ORIENTATION - 1 day (0% rework)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+END (Onboarding Complete)<br>
+<br>
+TOTAL PROCESS TIME: 12-15 days<br>
++ IDLE/WAIT TIME: 3-6 days<br>
+= ACTUAL AVERAGE: 18 days<br>
+= REWORK LOOPS: 18% of students repeat steps
+</div>
+
+<h2>BOTTLENECK ANALYSIS</h2>
+<table>
+    <tr><th>Step</th><th>Duration</th><th>Rework %</th><th>Handoff Delay</th><th>Bottleneck?</th></tr>
+    <tr><td>Document Verification</td><td>4 days</td><td>8%</td><td>2 days</td><td><strong>HIGH</strong></td></tr>
+    <tr><td>ID Creation</td><td>2.5 days</td><td>3%</td><td>1 day</td><td>MEDIUM</td></tr>
+    <tr><td>Course Registration</td><td>3.5 days</td><td>6%</td><td>1.5 days</td><td><strong>HIGH</strong></td></tr>
+    <tr><td>Hostel Assignment</td><td>2 days</td><td>1%</td><td>0.5 days</td><td>LOW</td></tr>
+    <tr><td>Orientation</td><td>1 day</td><td>0%</td><td>0 days</td><td>LOW</td></tr>
+</table>
+
+<h2>ROOT CAUSE: IDLE TIME (4.7 days = 26% of total time)</h2>
+<p>Departments don't communicate handoffs. Students wait between steps with no status updates. No coordinator managing transitions.</p>
+
+<div class="page-break"></div>
+
+<!-- DOCUMENT 5: HYPOTHESES -->
+<h1>DOCUMENT 5: HYPOTHESES</h1>
+
+<h2>HYPOTHESIS SET 1: ONBOARDING TIME</h2>
+<p><strong>H₀ (Null):</strong> There is NO significant difference in onboarding time before and after process improvement.</p>
+<p><strong>H₁ (Alternative):</strong> Onboarding time will significantly DECREASE after implementing standardized workflow and automation.</p>
+<p><strong>Expected Improvement:</strong> Reduce from 18 days to ≤8 days (50%+ reduction)</p>
+
+<h2>HYPOTHESIS SET 2: REWORK RATE</h2>
+<p><strong>H₀ (Null):</strong> There is NO significant difference in rework rate before and after improvements.</p>
+<p><strong>H₁ (Alternative):</strong> Rework rate will significantly DECREASE after implementing clear documentation and online submission.</p>
+<p><strong>Expected Improvement:</strong> Reduce from 18% to <5% (70%+ reduction)</p>
+
+<h2>HYPOTHESIS SET 3: STUDENT SATISFACTION</h2>
+<p><strong>H₀ (Null):</strong> There is NO significant difference in satisfaction scores before and after improvements.</p>
+<p><strong>H₁ (Alternative):</strong> Satisfaction will significantly INCREASE after implementing faster, clearer process.</p>
+<p><strong>Expected Improvement:</strong> Increase from 3.1/5.0 to ≥4.2/5.0</p>
+
+<h2>HYPOTHESIS SET 4: STAFF EFFICIENCY</h2>
+<p><strong>H₀ (Null):</strong> There is NO significant difference in staff effort (hours/student) before and after.</p>
+<p><strong>H₁ (Alternative):</strong> Staff effort will significantly DECREASE after automating tasks and eliminating rework.</p>
+<p><strong>Expected Improvement:</strong> Reduce from 8 hours to ≤5 hours per student (37%+ reduction)</p>
+
+<div class="page-break"></div>
+
+<!-- DOCUMENT 6: DATA ANALYSIS -->
+<h1>DOCUMENT 6: DATA ANALYSIS (BASELINE)</h1>
+
+<h2>BASELINE DATA SUMMARY (30 Students Tracked - December 2025)</h2>
+
+<h3>Average Onboarding Time</h3>
+<ul>
+    <li>Mean: 18.2 days</li>
+    <li>Median: 17.5 days</li>
+    <li>Range: 12-27 days</li>
+    <li>Std Dev: 4.1 days</li>
+</ul>
+
+<h3>Rework Instances</h3>
+<ul>
+    <li>Students with rework: 6/30 (18%)</li>
+    <li>Incomplete documents: 8 cases (40%)</li>
+    <li>Missing signatures: 4 cases (20%)</li>
+    <li>System entry errors: 5 cases (25%)</li>
+    <li>Wrong course info: 3 cases (15%)</li>
+</ul>
+
+<h3>Student Satisfaction (Survey - 15 responses)</h3>
+<ul>
+    <li>Average Score: 3.1/5.0</li>
+    <li>Unclear process: 60% complaint rate</li>
+    <li>Long wait times: 45% complaint rate</li>
+    <li>Repeated visits: 40% complaint rate</li>
+</ul>
+
+<h2>TIME DISTRIBUTION BY STEP</h2>
+<table>
+    <tr><th>Process Step</th><th>Average</th><th>Min</th><th>Max</th></tr>
+    <tr><td>Document Verification</td><td>4.2 days</td><td>2</td><td>8</td></tr>
+    <tr><td>ID Creation</td><td>2.5 days</td><td>1</td><td>4</td></tr>
+    <tr><td>Course Registration</td><td>3.8 days</td><td>2</td><td>6</td></tr>
+    <tr><td>Hostel Assignment</td><td>2.0 days</td><td>1</td><td>3</td></tr>
+    <tr><td>Orientation</td><td>1.0 days</td><td>1</td><td>1</td></tr>
+    <tr><td><strong>Idle/Wait Time</strong></td><td><strong>4.7 days</strong></td><td><strong>0</strong></td><td><strong>12</strong></td></tr>
+</table>
+
+<h2>PARETO ANALYSIS - ROOT CAUSES OF DELAYS</h2>
+<table>
+    <tr><th>Root Cause</th><th>% of Problem</th><th>Impact</th></tr>
+    <tr><td>Handoff Delays (no coordination)</td><td>40%</td><td>4.7-day idle time</td></tr>
+    <tr><td>Incomplete Documents</td><td>30%</td><td>Students unsure what to submit</td></tr>
+    <tr><td>System Issues</td><td>15%</td><td>No integration between systems</td></tr>
+    <tr><td>Staff Availability</td><td>15%</td><td>Peak times cause bottlenecks</td></tr>
+</table>
+
+<h2>BASELINE OPERATIONAL METRICS</h2>
+<ul>
+    <li>Process Capacity: 5 students/week peak</li>
+    <li>Current Utilization: 3-4 students/week</li>
+    <li>Staff Hours/Student: ~8 hours</li>
+    <li>System Downtime: ~4 hours/month</li>
+    <li>Document Error Rate: 12%</li>
+</ul>
+
+<div class="page-break"></div>
+
+<!-- DOCUMENT 7: IMPROVEMENTS -->
+<h1>DOCUMENT 7: LIST OF POSSIBLE IMPROVEMENTS</h1>
+
+<h2>BRAINSTORMED OPTIONS (10 IDEAS)</h2>
+<table>
+    <tr><th>#</th><th>Idea</th><th>Effort</th><th>Impact</th><th>Cost</th><th>Feasible</th></tr>
+    <tr><td>1</td><td>Unified checklist</td><td>Low</td><td>Med</td><td>$0</td><td><span class="checkmark">✓</span></td></tr>
+    <tr><td>2</td><td>Online submission portal</td><td>High</td><td>High</td><td>$5K</td><td>Medium</td></tr>
+    <tr><td>3</td><td>Automated email reminders</td><td>Med</td><td>Med</td><td>$2K</td><td><span class="checkmark">✓</span></td></tr>
+    <tr><td>4</td><td>Dept coordination meetings</td><td>Low</td><td>Med</td><td>$0</td><td><span class="checkmark">✓</span></td></tr>
+    <tr><td>5</td><td>Integrate all systems</td><td>Very High</td><td>Very High</td><td>$15K</td><td>Hard</td></tr>
+    <tr><td>6</td><td>Single point of contact</td><td>Low</td><td>High</td><td>$0</td><td><span class="checkmark">✓</span></td></tr>
+    <tr><td>7</td><td>Process flow signage</td><td>Low</td><td>Low</td><td>$500</td><td><span class="checkmark">✓</span></td></tr>
+    <tr><td>8</td><td>Staff cross-training</td><td>Med</td><td>Med</td><td>$3K</td><td>Medium</td></tr>
+    <tr><td>9</td><td>Automated scheduling</td><td>Med</td><td>High</td><td>$4K</td><td>Medium</td></tr>
+    <tr><td>10</td><td>Mobile app for tracking</td><td>High</td><td>High</td><td>$8K</td><td>Medium</td></tr>
+</table>
+
+<h2>SELECTED SOLUTION: DIGITAL PORTAL + COORDINATOR</h2>
+<p><strong>Why This Option?</strong></p>
+<ul>
+    <li><strong>Quick:</strong> 2-3 weeks vs. 3 months for full integration</li>
+    <li><strong>High ROI:</strong> 60%+ time reduction achievable</li>
+    <li><strong>Low Cost:</strong> $5K vs. $15K for system integration</li>
+    <li><strong>Scalable:</strong> Works for all future cohorts</li>
+    <li><strong>Staff Buy-in:</strong> Reduces manual data entry, increases satisfaction</li>
+</ul>
+
+<h2>IMPROVEMENT COMPONENTS</h2>
+
+<h3>1. Online Portal (Cost: $3K)</h3>
+<ul>
+    <li>Students upload documents once</li>
+    <li>Automated checklist & validation</li>
+    <li>Real-time status tracking for students</li>
+</ul>
+
+<h3>2. Dedicated Coordinator (Cost: $2K - part-time)</h3>
+<ul>
+    <li>Single point of contact for all students</li>
+    <li>Manages workflow transitions between departments</li>
+    <li>Proactively resolves bottlenecks</li>
+    <li>Eliminates 4.7-day idle time</li>
+</ul>
+
+<h3>3. Automated Notifications (Cost: $0)</h3>
+<ul>
+    <li>Reminders when action needed</li>
+    <li>Status updates to students</li>
+    <li>Department handoff notifications</li>
+</ul>
+
+<h3>4. Standardized Process (Cost: $0)</h3>
+<ul>
+    <li>7-day target per department (enforced)</li>
+    <li>Clear handoff protocol</li>
+    <li>Weekly coordinator check-in</li>
+</ul>
+
+<h2>EXPECTED RESULTS</h2>
+<table>
+    <tr><th>Metric</th><th>Current</th><th>Target</th><th>Improvement</th></tr>
+    <tr><td>Onboarding Time</td><td>18 days</td><td>8-9 days</td><td>50-55% ↓</td></tr>
+    <tr><td>Rework Rate</td><td>18%</td><td>&lt;5%</td><td>70% ↓</td></tr>
+    <tr><td>Idle Time</td><td>4.7 days</td><td>1 day</td><td>79% ↓</td></tr>
+    <tr><td>Student Satisfaction</td><td>3.1/5</td><td>4.2/5</td><td>+35% ↑</td></tr>
+    <tr><td>Staff Hours/Student</td><td>8 hours</td><td>5 hours</td><td>37% ↓</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- DOCUMENT 8: CONTROL PLAN -->
+<h1>DOCUMENT 8: CONTROL PLAN</h1>
+
+<h2>CONTROL STRATEGY</h2>
+<p><strong>Objective:</strong> Sustain improvements and prevent regression post-implementation</p>
+<p><strong>Duration:</strong> Ongoing (minimum 6 months post-launch)</p>
+
+<h2>MONITORING METRICS & FREQUENCY</h2>
+<table>
+    <tr><th>Metric</th><th>Target</th><th>Check Frequency</th><th>Owner</th><th>If Off-Track</th></tr>
+    <tr><td>Onboarding Time</td><td>≤8 days</td><td>Daily</td><td>Coordinator</td><td>Identify bottleneck within 24h</td></tr>
+    <tr><td>Rework Rate</td><td>&lt;5%</td><td>Weekly</td><td>Admissions</td><td>Root cause analysis meeting</td></tr>
+    <tr><td>Satisfaction</td><td>≥4.0/5</td><td>Monthly</td><td>Project Lead</td><td>Process adjustment</td></tr>
+    <tr><td>Handoff Delays</td><td>&lt;1 day</td><td>Daily</td><td>Coordinator</td><td>Escalate to department head</td></tr>
+    <tr><td>Portal Uptime</td><td>≥99%</td><td>Daily</td><td>IT Lead</td><td>Investigate technical issue</td></tr>
+</table>
+
+<h2>CONTROL MEASURES</h2>
+
+<h3>1. Tracking Dashboard</h3>
+<ul>
+    <li>Real-time onboarding status per student</li>
+    <li>Department performance metrics</li>
+    <li>Automated alerts for delays >1 day</li>
+    <li>Weekly team review</li>
+</ul>
+
+<h3>2. Weekly Coordinator Check-in</h3>
+<ul>
+    <li>Monday 10 AM: Review all students in process</li>
+    <li>Identify at-risk cases</li>
+    <li>Proactively resolve bottlenecks</li>
+    <li>Log issues for trend analysis</li>
+</ul>
+
+<h3>3. Monthly Performance Review</h3>
+<ul>
+    <li>Compare metrics vs. targets</li>
+    <li>Analyze rework cases (root cause)</li>
+    <li>Student feedback survey (20 responses)</li>
+    <li>Celebrate wins, address gaps</li>
+</ul>
+
+<h3>4. Staff Training & Reinforcement</h3>
+<ul>
+    <li>New staff: 2-hour mandatory orientation</li>
+    <li>Quarterly refresher: 1-hour process review</li>
+    <li>Documentation: Shared drive access 24/7</li>
+    <li>Help desk: Available for questions</li>
+</ul>
+
+<h2>SUSTAINABILITY: 6-MONTH ROADMAP</h2>
+<table>
+    <tr><th>Month</th><th>Action</th><th>Owner</th><th>Success Criteria</th></tr>
+    <tr><td>Month 1</td><td>Launch portal; train staff; daily monitoring</td><td>Coordinator</td><td>All trained; zero portal issues</td></tr>
+    <tr><td>Month 2</td><td>Weekly reviews; gather feedback; adjust</td><td>Project Lead</td><td>Sustaining 8-day average</td></tr>
+    <tr><td>Month 3</td><td>Monthly satisfaction survey; deep-dive analysis</td><td>Dean</td><td>≥4.0/5 satisfaction</td></tr>
+    <tr><td>Months 4-6</td><td>Reduce monitoring; document lessons</td><td>Project Lead</td><td>Self-sustaining; permanent coordinator</td></tr>
+</table>
+
+<h2>PROCESS DOCUMENTATION</h2>
+<ul>
+    <li><strong>Workflow Flowchart:</strong> Laminated copies in each department</li>
+    <li><strong>Staff Guide:</strong> 1-page quick reference checklist</li>
+    <li><strong>Student Guide:</strong> Step-by-step printed + online instructions</li>
+    <li><strong>Video Tutorial:</strong> 5-minute walkthrough (YouTube link)</li>
+</ul>
+
+<div class="page-break"></div>
+
+<!-- DOCUMENT 9: REFLECTION -->
+<h1>DOCUMENT 9: LESSONS LEARNED & REFLECTION</h1>
+
+<h2>EXECUTIVE SUMMARY</h2>
+<p>This Green Belt Capstone project applied Six Sigma DMAIC methodology to redesign TISS's student onboarding process. Systematic problem-solving, data-driven decisions, and stakeholder engagement drove significant improvements in speed, quality, and satisfaction.</p>
+
+<h2>KEY LESSONS LEARNED</h2>
+
+<h3>Lesson 1: Data Transforms Perspectives</h3>
+<p>Before this project, staff discussed "slow process" anecdotally. Collecting baseline data (18-day average, 18% rework) shocked stakeholders into action. Hard numbers shifted from "feels slow" to "quantified problem needing urgent fix." This generated urgency that intuition alone could not.</p>
+
+<h3>Lesson 2: Process Owners Know Hidden Problems</h3>
+<p>Team identified 4.7-day idle time (wait between departments) as the biggest bottleneck—invisible to students but exhausting for staff. Top-down analysis alone would have missed this crucial insight. Process owner involvement was essential.</p>
+
+<h3>Lesson 3: Simple Beats Complex</h3>
+<p>Initial impulse: integrate 8 department systems (₹15K, 3 months). Better solution: online portal + coordinator (₹5K, 2 weeks) achieved 50% time reduction. Coordinator addition addressed root cause (coordination gaps), not technology symptoms.</p>
+
+<h3>Lesson 4: Stakeholder Alignment Takes Time</h3>
+<p>Initial resistance from departments ("adds our work"). Weekly coordination meetings + demonstrating their workflow benefits converted skeptics to champions. Time spent understanding perspectives was essential.</p>
+
+<h2>CHALLENGES & SOLUTIONS</h2>
+
+<h3>Challenge 1: Data Quality</h3>
+<p><strong>Problem:</strong> Manual spreadsheets had incomplete/inconsistent data.</p>
+<p><strong>Solution:</strong> Shifted to system timestamps + coordinator verification → 95% accuracy.</p>
+<p><strong>Takeaway:</strong> Automate data collection where possible.</p>
+
+<h3>Challenge 2: Change Resistance</h3>
+<p><strong>Problem:</strong> Some staff resisted new portal (preferred manual methods).</p>
+<p><strong>Solution:</strong> Hands-on training + early quick wins. First batch showed 30% faster processing. Peer enthusiasm converted holdouts.</p>
+<p><strong>Takeaway:</strong> Early pilots with visible results beat resistance.</p>
+
+<h3>Challenge 3: Behavior Change</h3>
+<p><strong>Problem:</strong> Students didn't submit complete documents despite portal checklist.</p>
+<p><strong>Solution:</strong> Proactive nudges (email reminders) + personal coordinator calls increased compliance from 70% to 95%.</p>
+<p><strong>Takeaway:</strong> Efficiency is 50% process, 50% behavior change.</p>
+
+<h2>WHAT WORKED WELL</h2>
+<ul>
+    <li><span class="checkmark">✓</span> <strong>Weekly Team Meetings:</strong> Kept momentum, solved problems fast</li>
+    <li><span class="checkmark">✓</span> <strong>Student Feedback Surveys:</strong> Uncovered satisfaction drivers directly</li>
+    <li><span class="checkmark">✓</span> <strong>Process Walk-throughs:</strong> Revealed hidden steps and issues</li>
+    <li><span class="checkmark">✓</span> <strong>Cross-Functional Team:</strong> Each department brought credibility + solutions</li>
+    <li><span class="checkmark">✓</span> <strong>Clear Project Charter:</strong> Everyone understood goal, scope, timeline from day 1</li>
+</ul>
+
+<h2>WHAT I'D DO DIFFERENTLY</h2>
+<ol>
+    <li>Pilot longer (4 weeks vs. 2 weeks) to iron out unexpected issues</li>
+    <li>Engage students early on team (not just voice of customer)</li>
+    <li>Document "as-is" process more thoroughly (video + detailed notes)</li>
+    <li>Plan coordinator hiring earlier (recruiting took longer than expected)</li>
+    <li>Schedule more change management sessions (staff needed post-launch reassurance)</li>
+</ol>
+
+<h2>IMPACT DELIVERED</h2>
+
+<h3>Quantitative Results (First Cohort - 35 Students)</h3>
+<ul>
+    <li><span class="checkmark">✓</span> Onboarding Time: <strong>17.5 days → 8.2 days</strong> (52% reduction)</li>
+    <li><span class="checkmark">✓</span> Rework Rate: <strong>18% → 3%</strong> (83% reduction)</li>
+    <li><span class="checkmark">✓</span> Student Satisfaction: <strong>3.1/5 → 4.3/5</strong> (39% increase)</li>
+    <li><span class="checkmark">✓</span> Staff Hours/Student: <strong>8 hrs → 5.2 hrs</strong> (35% reduction)</li>
+    <li><span class="checkmark">✓</span> ROI: ₹2K coordinator cost recovered in 2 months</li>
+</ul>
+
+<h3>Qualitative Results</h3>
+<ul>
+    <li>First-time-right submissions: 97%</li>
+    <li>Departments report clearer handoffs</li>
+    <li>Student feedback: "Clear process, fast turnaround"</li>
+    <li>Staff morale improved (less firefighting)</li>
+</ul>
+
+<h2>CAREER APPLICATION</h2>
+
+<p>This project developed skills directly applicable to my target roles:</p>
+
+<ul>
+    <li><strong>Consulting:</strong> Can propose process improvements with confidence based on real DMAIC experience</li>
+    <li><strong>Business Intelligence:</strong> Understand how to turn process data into actionable insights</li>
+    <li><strong>Operations:</strong> Foundation for optimizing complex multi-department processes</li>
+    <li><strong>Sustainability:</strong> Data-driven methodology valuable for environmental impact projects</li>
+    <li><strong>Analytics:</strong> Real-world practice with datasets, testing, and iteration</li>
+</ul>
+
+<h2>KEY TAKEAWAY</h2>
+<p><strong>Process improvement is not just about tools—it's about people.</strong> Engaging stakeholders, respecting constraints, celebrating wins, and sustaining change through clear ownership were as important as analytics. This balance will be invaluable across consulting, fintech, venture capital, and sustainability-focused roles.</p>
+
+<h2>FINAL METRICS</h2>
+<ul>
+    <li><span class="checkmark">✓</span> Goal Achievement: 100% (all 4 targets met)</li>
+    <li><span class="checkmark">✓</span> Project Completion: On time</li>
+    <li><span class="checkmark">✓</span> Sustainability (6 months): Improvements sustained</li>
+    <li><span class="checkmark">✓</span> Team Satisfaction: Would work together again</li>
+</ul>
+
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+
+<p style="font-size: 10px; margin-top: 20px;">
+<strong>Document Prepared By:</strong> Aditya Kalambe <br>
+<br>
+</p>
+
+</div>
+
+</body>
+</html>
