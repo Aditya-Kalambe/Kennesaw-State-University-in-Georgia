@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Process Capability – Checkout Waiting Time</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    table { border-collapse: collapse; width: 60%; }
+    th, td { border: 1px solid #999; padding: 6px; text-align: left; }
+    th { background-color: #eee; }
+  </style>
+</head>
+<body>
+
+<h1>Process Capability – Waiting Time vs. Target</h1>
+
+<h2>Assumptions</h2>
+<ul>
+  <li>Customer “specification”: checkout waiting time should be less than or equal to 7 minutes.</li>
+  <li>No lower limit; shorter is better as long as service is correct.</li>
+  <li>From baseline data: mean waiting time = 8.5 minutes, standard deviation = 2.3 minutes.</li>
+</ul>
+
+<h2>Simple Capability View</h2>
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>Mean (μ)</td>
+    <td>8.5 min</td>
+  </tr>
+  <tr>
+    <td>Standard deviation (σ)</td>
+    <td>2.3 min</td>
+  </tr>
+  <tr>
+    <td>Upper spec limit (USL)</td>
+    <td>7.0 min</td>
+  </tr>
+  <tr>
+    <td>Approx. Z-score at USL</td>
+    <td>(7.0 - 8.5) / 2.3 ≈ -0.65</td>
+  </tr>
+</table>
+
+<h2>Plain-Language Interpretation</h2>
+<ul>
+  <li>The average wait (8.5 minutes) is already above the informal target of 7 minutes.</li>
+  <li>Many customers naturally fall beyond that target, so current “capability” is poor.</li>
+  <li>Before doing a fancy Cp/Cpk calculation, it is clear that the process needs to be centered and tightened.</li>
+</ul>
+
+<p>
+For this simple project, this basic capability view is enough to justify moving into Analyze and then Improve.
+</p>
+
+</body>
+</html>
