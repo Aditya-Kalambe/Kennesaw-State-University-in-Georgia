@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stakeholder Analysis & Commitment Scale</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #333; }
+        .header { background-color: #003366; color: white; padding: 20px; border-radius: 5px; }
+        .section { margin: 20px 0; padding: 15px; background-color: #f5f5f5; border-left: 4px solid #003366; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; font-size: 12px; }
+        th { background-color: #003366; color: white; }
+        .label { font-weight: bold; color: #003366; }
+        .scale-box { display: flex; justify-content: space-around; margin: 20px 0; }
+        .scale-item { padding: 10px; border: 1px solid #ddd; text-align: center; flex: 1; margin: 0 2px; font-size: 12px; }
+        .matrix { border: 2px solid #003366; padding: 20px; margin: 20px 0; }
+        .quadrant { float: left; width: 48%; margin: 1%; padding: 15px; border: 1px solid #999; text-align: center; }
+        .footer { clear: both; margin-top: 30px; padding-top: 20px; border-top: 2px solid #003366; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>STAKEHOLDER ANALYSIS & COMMITMENT SCALE</h1>
+        <p>Order Processing Efficiency Improvement Project</p>
+    </div>
+
+    <div class="section">
+        <h2>1. STAKEHOLDER IDENTIFICATION & ANALYSIS</h2>
+        <table>
+            <tr>
+                <th>Stakeholder Group</th>
+                <th>Key Members</th>
+                <th>Role / Interest</th>
+                <th>Impact on Project</th>
+                <th>Influence Level</th>
+            </tr>
+            <tr>
+                <td><strong>Executive Sponsor (Operations)</strong></td>
+                <td>VP Operations</td>
+                <td>Project authorization, strategic alignment, resource allocation</td>
+                <td>Critical - Can approve/block project</td>
+                <td>Very High</td>
+            </tr>
+            <tr>
+                <td><strong>Finance Department</strong></td>
+                <td>Finance Director, Budget Manager</td>
+                <td>Budget approval, ROI monitoring, financial benefits realization</td>
+                <td>High - Controls funding ($75K)</td>
+                <td>High</td>
+            </tr>
+            <tr>
+                <td><strong>IT Department</strong></td>
+                <td>IT Manager, System Administrator, Database Specialist</td>
+                <td>System configuration, data extraction, technical enablement</td>
+                <td>Critical - System access & changes needed</td>
+                <td>Very High</td>
+            </tr>
+            <tr>
+                <td><strong>Warehouse Management</strong></td>
+                <td>Warehouse Manager, Shift Supervisors (3)</td>
+                <td>Daily operations, process execution, staff management</td>
+                <td>Critical - Direct process owners</td>
+                <td>High</td>
+            </tr>
+            <tr>
+                <td><strong>Customer Service Team</strong></td>
+                <td>CS Manager, 2 Senior Analysts</td>
+                <td>Customer feedback, issue escalation, performance monitoring</td>
+                <td>Medium - Handles customer impacts</td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td><strong>Warehouse Staff (Hourly)</strong></td>
+                <td>20 pickers, 10 packers, 5 quality checkers</td>
+                <td>Process execution, daily work changes, frontline feedback</td>
+                <td>High - Must execute new process</td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td><strong>HR / Training</strong></td>
+                <td>HR Manager, Training Coordinator</td>
+                <td>Staff training, change management, performance management</td>
+                <td>Medium - Enables staff adoption</td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td><strong>Shipping / Carriers</strong></td>
+                <td>Shipping Coordinator, Carrier Representatives</td>
+                <td>Coordination, pickup timing, handoff optimization</td>
+                <td>Medium - External touchpoint</td>
+                <td>Low-Medium</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>2. STAKEHOLDER COMMITMENT SCALE FRAMEWORK</h2>
+        <p><span class="label">Commitment Levels (8-point scale):</span></p>
+        <div class="scale-box">
+            <div class="scale-item"><strong>8</strong><br/>Enthusiastic Support</div>
+            <div class="scale-item"><strong>7</strong><br/>Active Support</div>
+            <div class="scale-item"><strong>6</strong><br/>Willing Support</div>
+            <div class="scale-item"><strong>5</strong><br/>Compliant</div>
+            <div class="scale-item"><strong>4</strong><br/>Skeptical</div>
+            <div class="scale-item"><strong>3</strong><br/>Reluctant</div>
+            <div class="scale-item"><strong>2</strong><br/>Hostile</div>
+            <div class="scale-item"><strong>1</strong><br/>Blocking</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. CURRENT vs. DESIRED COMMITMENT ASSESSMENT</h2>
+        <table>
+            <tr>
+                <th>Stakeholder Group</th>
+                <th>Current Commitment</th>
+                <th>Desired Commitment</th>
+                <th>Gap</th>
+                <th>Engagement Strategy</th>
+            </tr>
+            <tr>
+                <td><strong>Executive Sponsor</strong></td>
+                <td>8 - Enthusiastic Support</td>
+                <td>8 - Enthusiastic Support</td>
+                <td style="background-color: #90EE90;">✓ None</td>
+                <td>Maintain monthly sponsor reviews, highlight progress</td>
+            </tr>
+            <tr>
+                <td><strong>Finance Director</strong></td>
+                <td>4 - Skeptical</td>
+                <td>7 - Active Support</td>
+                <td style="background-color: #FFB6C6;">+3 (Priority)</td>
+                <td>Monthly financial reports, ROI tracking, early wins communication</td>
+            </tr>
+            <tr>
+                <td><strong>IT Department</strong></td>
+                <td>5 - Compliant</td>
+                <td>7 - Active Support</td>
+                <td style="background-color: #FFD700;">+2 (High)</td>
+                <td>Allocate dedicated resource, recognize IT contribution, provide autonomy</td>
+            </tr>
+            <tr>
+                <td><strong>Warehouse Manager</strong></td>
+                <td>7 - Active Support</td>
+                <td>8 - Enthusiastic Support</td>
+                <td style="background-color: #FFD700;">+1 (Medium)</td>
+                <td>Involve in solution design, recognize staff improvements</td>
+            </tr>
+            <tr>
+                <td><strong>Customer Service</strong></td>
+                <td>7 - Active Support</td>
+                <td>7 - Active Support</td>
+                <td style="background-color: #90EE90;">✓ None</td>
+                <td>Regular communication on project progress affecting customer impact</td>
+            </tr>
+            <tr>
+                <td><strong>Warehouse Staff</strong></td>
+                <td>5 - Compliant</td>
+                <td>6 - Willing Support</td>
+                <td style="background-color: #FFD700;">+1 (Medium)</td>
+                <td>Transparent communication, address concerns, involve in pilots</td>
+            </tr>
+            <tr>
+                <td><strong>HR / Training</strong></td>
+                <td>6 - Willing Support</td>
+                <td>7 - Active Support</td>
+                <td style="background-color: #FFD700;">+1 (Medium)</td>
+                <td>Early training plan development, resource allocation</td>
+            </tr>
+            <tr>
+                <td><strong>Shipping/Carriers</strong></td>
+                <td>5 - Compliant</td>
+                <td>6 - Willing Support</td>
+                <td style="background-color: #FFD700;">+1 (Low)</td>
+                <td>Quarterly coordination meetings, shared benefit communication</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>4. STAKEHOLDER INFLUENCE / INTEREST MATRIX</h2>
+        <p><span class="label">This matrix positions stakeholders by their ability to influence the project outcome and their level of interest in project success.</span></p>
+        
+        <div class="matrix">
+            <div class="quadrant" style="background-color: #FFE4E1; border-color: #FF6B6B;">
+                <h3 style="color: #FF6B6B;">HIGH INFLUENCE<br/>LOW INTEREST</h3>
+                <p><strong>Strategy: SATISFY</strong></p>
+                <p><em>Keep satisfied with minimal engagement</em></p>
+                <p>Shipping/Carriers (low)</p>
+            </div>
+            
+            <div class="quadrant" style="background-color: #E1F5FF; border-color: #42A5F5;">
+                <h3 style="color: #42A5F5;">HIGH INFLUENCE<br/>HIGH INTEREST</h3>
+                <p><strong>Strategy: MANAGE CLOSELY</strong></p>
+                <p><em>Highest priority engagement</em></p>
+                <p>Executive Sponsor, IT, Finance,<br/>Warehouse Manager</p>
+            </div>
+        </div>
+
+        <div class="matrix">
+            <div class="quadrant" style="background-color: #F0F4C3; border-color: #9CCC65;">
+                <h3 style="color: #9CCC65;">LOW INFLUENCE<br/>LOW INTEREST</h3>
+                <p><strong>Strategy: MONITOR</strong></p>
+                <p><em>Regular updates only</em></p>
+                <p>Warehouse Staff (indirect interest)</p>
+            </div>
+            
+            <div class="quadrant" style="background-color: #FCE4EC; border-color: #EC407A;">
+                <h3 style="color: #EC407A;">LOW INFLUENCE<br/>HIGH INTEREST</h3>
+                <p><strong>Strategy: INFORM</strong></p>
+                <p><em>Keep engaged and informed</em></p>
+                <p>Customer Service,<br/>HR/Training</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. ENGAGEMENT PLAN BY STAKEHOLDER</h2>
+        
+        <h3>Executive Sponsor (VP Operations)</h3>
+        <ul>
+            <li><strong>Current Status:</strong> Enthusiastic Support (8)</li>
+            <li><strong>Engagement Method:</strong> Monthly executive steering committee meetings</li>
+            <li><strong>Communication Frequency:</strong> Monthly (1 hour meetings)</li>
+            <li><strong>Key Messages:</strong> Business ROI, timeline adherence, milestone achievements</li>
+            <li><strong>Issues/Escalations:</strong> Budget overruns, timeline delays, scope changes</li>
+        </ul>
+
+        <h3>Finance Director (Priority - CONVERT from Skeptical to Supporter)</h3>
+        <ul>
+            <li><strong>Current Status:</strong> Skeptical (4) → Target: Active Support (7)</li>
+            <li><strong>Concern:</strong> ROI unproven, "another Six Sigma project"</li>
+            <li><strong>Engagement Method:</strong> Bi-weekly financial tracking reports, early wins celebration</li>
+            <li><strong>Communication Frequency:</strong> Bi-weekly (15-min touchpoints + monthly detailed review)</li>
+            <li><strong>Key Messages:</strong> $1.2M annual benefit, 16:1 ROI, monthly cost tracking, risk mitigation</li>
+            <li><strong>Tactics:</strong>
+                <ul>
+                    <li>Share case studies of similar successful projects</li>
+                    <li>Provide detailed financial model with sensitivity analysis</li>
+                    <li>Report early wins (even small ones: $5K monthly cost reduction in Measure phase)</li>
+                    <li>Involve in monthly steering committee for visibility</li>
+                </ul>
+            </li>
+            <li><strong>Success Indicator:</strong> Supports project recommendation, allocates additional resources if needed</li>
+        </ul>
+
+        <h3>IT Department (Priority - Increase from Compliant to Active Support)</h3>
+        <ul>
+            <li><strong>Current Status:</strong> Compliant (5) → Target: Active Support (7)</li>
+            <li><strong>Concern:</strong> Competing priorities, resource constraints, "not their project"</li>
+            <li><strong>Engagement Method:</strong> Dedicated IT project resource with clear role, weekly tech meetings</li>
+            <li><strong>Communication Frequency:</strong> Weekly (30-min technical sync)</li>
+            <li><strong>Key Messages:</strong> IT autonomy on solutions, IT will be recognized for success, minimal system disruption</li>
+            <li><strong>Tactics:</strong>
+                <ul>
+                    <li>Assign one senior IT person as full project team member</li>
+                    <li>Provide IT recognition in project communications</li>
+                    <li>Allow IT to propose technical solutions (not dictated)</li>
+                    <li>Include IT in improvement benefits (system performance improvement)</li>
+                </ul>
+            </li>
+            <li><strong>Success Indicator:</strong> Proactively identifies technical opportunities, advocates for project in IT meetings</li>
+        </ul>
+
+        <h3>Warehouse Manager & Staff</h3>
+        <ul>
+            <li><strong>Current Status:</strong> Active to Compliant (5-7) → Maintain/Increase to Willing-Active (6-7)</li>
+            <li><strong>Concern:</strong> Fear of change, potential job security concerns, additional work during implementation</li>
+            <li><strong>Engagement Method:</strong> Bi-weekly operations meetings, pilot testing, training involvement</li>
+            <li><strong>Communication Frequency:</strong> Bi-weekly team meetings + daily shift briefings during implementation</li>
+            <li><strong>Key Messages:</strong> Process improvements will make job easier, no job elimination, staff input valued</li>
+            <li><strong>Tactics:</strong>
+                <ul>
+                    <li>Involve in problem identification and solution design</li>
+                    <li>Run pilot with volunteer group before full rollout</li>
+                    <li>Provide clear training schedule well in advance</li>
+                    <li>Address concerns about workload changes honestly</li>
+                    <li>Recognize and celebrate improvements publicly</li>
+                </ul>
+            </li>
+            <li><strong>Success Indicator:</strong> Staff voluntarily participate in pilots, provide constructive feedback, implement changes smoothly</li>
+        </ul>
+
+        <h3>Customer Service & Finance Support</h3>
+        <ul>
+            <li><strong>Current Status:</strong> Active Support (7)</li>
+            <li><strong>Engagement Method:</strong> Monthly updates, involvement in benefits measurement</li>
+            <li><strong>Communication Frequency:</strong> Monthly meetings</li>
+            <li><strong>Key Messages:</strong> Customer satisfaction improvement, complaint reduction, operational efficiency</li>
+            <li><strong>Tactics:</strong> Monthly metrics dashboard showing customer impact improvements</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. RISK MITIGATION: STAKEHOLDER-SPECIFIC RISKS & MITIGATION</h2>
+        <table>
+            <tr>
+                <th>Stakeholder / Risk</th>
+                <th>Risk Description</th>
+                <th>Likelihood</th>
+                <th>Impact</th>
+                <th>Mitigation Strategy</th>
+            </tr>
+            <tr>
+                <td><strong>Finance Director Withdrawal</strong></td>
+                <td>Finance loses interest if early results are not visible</td>
+                <td>Medium</td>
+                <td>High - Budget could be cut</td>
+                <td>Establish monthly metrics dashboard; identify quick wins in Measure phase ($50K cost savings demonstration)</td>
+            </tr>
+            <tr>
+                <td><strong>IT Resource Conflict</strong></td>
+                <td>IT diverts resources to emergency issues</td>
+                <td>Medium</td>
+                <td>High - Project delay</td>
+                <td>Secure written IT commitment; identify backup IT person; escalate conflicts to CIO immediately</td>
+            </tr>
+            <tr>
+                <td><strong>Warehouse Staff Resistance</strong></td>
+                <td>Staff resists changes, implementation slowdown</td>
+                <td>Medium</td>
+                <td>High - Benefits not realized</td>
+                <td>Transparent communication, pilot testing, training, recognition; listen to concerns</td>
+            </tr>
+            <tr>
+                <td><strong>Sponsor Attention Loss</strong></td>
+                <td>Sponsor loses focus due to other business priorities</td>
+                <td>Low</td>
+                <td>Medium - De-prioritization</td>
+                <td>Monthly steering meetings with clear agenda; escalation procedure for decision delays</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>7. STAKEHOLDER COMMUNICATION MATRIX</h2>
+        <table>
+            <tr>
+                <th>Stakeholder</th>
+                <th>Communication Method</th>
+                <th>Frequency</th>
+                <th>Primary Messenger</th>
+                <th>Topics / Content</th>
+            </tr>
+            <tr>
+                <td>Executive Sponsor</td>
+                <td>In-person steering meetings</td>
+                <td>Monthly</td>
+                <td>Black Belt Project Manager</td>
+                <td>Progress, milestones, budget, risks, decisions needed</td>
+            </tr>
+            <tr>
+                <td>Finance Director</td>
+                <td>Detailed financial reports + meeting</td>
+                <td>Bi-weekly</td>
+                <td>Green Belt + Finance member</td>
+                <td>Cost tracking, ROI progress, benefits realization, variances</td>
+            </tr>
+            <tr>
+                <td>IT Department</td>
+                <td>Technical sync meetings</td>
+                <td>Weekly</td>
+                <td>IT Project Member</td>
+                <td>Technical issues, data requirements, system configs, blockers</td>
+            </tr>
+            <tr>
+                <td>Warehouse Manager</td>
+                <td>Operations meetings</td>
+                <td>Bi-weekly</td>
+                <td>Black Belt / Warehouse Manager</td>
+                <td>Process changes, schedule, staffing, pilot results</td>
+            </tr>
+            <tr>
+                <td>Warehouse Staff</td>
+                <td>Shift briefings + team meetings</td>
+                <td>Daily (during implementation) / Weekly (other)</td>
+                <td>Warehouse Supervisor</td>
+                <td>Schedule changes, training, process updates, recognition</td>
+            </tr>
+            <tr>
+                <td>Customer Service</td>
+                <td>Monthly metrics review</td>
+                <td>Monthly</td>
+                <td>Black Belt</td>
+                <td>Customer impact, complaint trends, satisfaction metrics</td>
+            </tr>
+            <tr>
+                <td>HR / Training</td>
+                <td>Planning meetings</td>
+                <td>Bi-weekly</td>
+                <td>Black Belt / Green Belt</td>
+                <td>Training needs, schedule, materials, staff communication</td>
+            </tr>
+            <tr>
+                <td>All Project Team</td>
+                <td>Weekly project team meeting</td>
+                <td>Weekly</td>
+                <td>Black Belt Project Manager</td>
+                <td>Status, issues, progress toward milestones, next steps</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p><strong>Document Version:</strong> 1.0 | <strong>Date:</strong> December 2025</p>
+        <p><strong>Next Review:</strong> After first engagement activities (Week 2) to assess commitment level changes</p>
+    </div>
+</body>
+</html>

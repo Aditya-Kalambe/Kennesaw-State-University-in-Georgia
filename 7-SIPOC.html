@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIPOC Diagram - Order Processing</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #333; }
+        .header { background-color: #003366; color: white; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+        .sipoc-table { width: 100%; border-collapse: collapse; margin: 20px 0; border: 3px solid #003366; }
+        .sipoc-table th { background-color: #003366; color: white; padding: 15px; text-align: center; font-size: 14px; font-weight: bold; }
+        .sipoc-table td { border: 2px solid #003366; padding: 15px; text-align: left; vertical-align: top; font-size: 12px; }
+        .sipoc-label { font-weight: bold; color: #003366; margin-bottom: 8px; }
+        .process-step { background-color: #E8F4F8; padding: 8px; margin: 5px 0; border-radius: 3px; }
+        .section { margin: 20px 0; padding: 15px; background-color: #f5f5f5; border-left: 4px solid #003366; }
+        .note { background-color: #FFF9E6; border: 1px solid #FFD700; padding: 10px; margin: 10px 0; }
+        .legend { display: flex; justify-content: space-around; margin: 20px 0; font-size: 12px; }
+        .legend-item { padding: 10px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SIPOC DIAGRAM</h1>
+        <p>Order Processing & Fulfillment Process | High-Level Process Map</p>
+    </div>
+
+    <table class="sipoc-table">
+        <tr>
+            <th style="width: 15%;">SUPPLIERS</th>
+            <th style="width: 15%;">INPUTS</th>
+            <th style="width: 35%;">PROCESS</th>
+            <th style="width: 15%;">OUTPUTS</th>
+            <th style="width: 20%;">CUSTOMERS</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="sipoc-label">Primary Suppliers:</div>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>E-commerce order system</li>
+                    <li>Inventory management system</li>
+                    <li>Warehouse management system (WMS)</li>
+                    <li>Shipping/carrier system</li>
+                    <li>Internal staff (pickers, packers, QC)</li>
+                    <li>Inventory and packaging suppliers</li>
+                </ul>
+                
+                <div class="sipoc-label" style="margin-top: 15px;">External Suppliers:</div>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Shipping carriers (UPS, FedEx, USPS)</li>
+                    <li>Material suppliers (boxes, tape, labels)</li>
+                </ul>
+            </td>
+            
+            <td>
+                <div class="sipoc-label">Data Inputs:</div>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Customer order details</li>
+                    <li>Order specification file</li>
+                    <li>Inventory location data</li>
+                    <li>Shipping address/requirements</li>
+                </ul>
+                
+                <div class="sipoc-label" style="margin-top: 15px;">Physical Inputs:</div>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Products from inventory</li>
+                    <li>Packaging materials</li>
+                    <li>Shipping labels</li>
+                </ul>
+                
+                <div class="sipoc-label" style="margin-top: 15px;">Other Inputs:</div>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Quality standards</li>
+                    <li>Shipping deadlines</li>
+                </ul>
+            </td>
+            
+            <td>
+                <div class="process-step"><strong>Step 1:</strong> Order Receipt<br/>• Receive customer order in system<br/>• Validate order completeness</div>
+                
+                <div class="process-step"><strong>Step 2:</strong> Order Verification<br/>• Check inventory availability<br/>• Verify customer details<br/>• Flag any issues</div>
+                
+                <div class="process-step"><strong>Step 3:</strong> Picking<br/>• Retrieve items from warehouse<br/>• Stage items at packing area</div>
+                
+                <div class="process-step"><strong>Step 4:</strong> Packing<br/>• Pack items in box<br/>• Prepare shipping label<br/>• Add packing slip</div>
+                
+                <div class="process-step"><strong>Step 5:</strong> Quality Check<br/>• Verify order accuracy<br/>• Check packaging condition<br/>• Scan shipment</div>
+                
+                <div class="process-step"><strong>Step 6:</strong> Shipping<br/>• Hand off to carrier<br/>• Update system status<br/>• Generate tracking number</div>
+            </td>
+            
+            <td>
+                <div class="sipoc-label">Physical Outputs:</div>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Packed & shipped order</li>
+                    <li>Shipping confirmation</li>
+                    <li>Packing materials waste</li>
+                </ul>
+                
+                <div class="sipoc-label" style="margin-top: 15px;">Data Outputs:</div>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Tracking number</li>
+                    <li>Shipping confirmation</li>
+                    <li>Order status update</li>
+                    <li>Performance metrics</li>
+                    <li>Inventory adjustment</li>
+                </ul>
+                
+                <div class="sipoc-label" style="margin-top: 15px;">Quality Indicators:</div>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Order accuracy rate</li>
+                    <li>Shipping timeliness</li>
+                    <li>System status accuracy</li>
+                </ul>
+            </td>
+            
+            <td>
+                <div class="sipoc-label">Primary Customers:</div>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>End customers</li>
+                    <li>Retail partners</li>
+                </ul>
+                
+                <div class="sipoc-label" style="margin-top: 15px;">Internal Customers:</div>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Customer service team</li>
+                    <li>Finance/accounting</li>
+                    <li>Shipping department</li>
+                    <li>Management/leadership</li>
+                </ul>
+                
+                <div class="sipoc-label" style="margin-top: 15px;">Carrier/External:</div>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Shipping carriers</li>
+                    <li>Distribution partners</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="section">
+        <h2>SIPOC ANALYSIS - KEY INSIGHTS</h2>
+        
+        <h3>Critical Suppliers & Dependencies:</h3>
+        <ul>
+            <li><strong>Inventory Management System:</strong> Accuracy of inventory data directly impacts picking accuracy and order fulfillment. Current accuracy: 94% (target: 99.8%)</li>
+            <li><strong>Order System:</strong> Data quality at receipt affects downstream processes. Validation at Step 2 currently catching 8% error rate</li>
+            <li><strong>Warehouse Staff:</strong> Picking and packing quality depends on staff training and process adherence</li>
+            <li><strong>Shipping Carriers:</strong> External dependency; impact on delivery time limited but included for full visibility</li>
+        </ul>
+
+        <h3>Process Bottlenecks Identified:</h3>
+        <ul>
+            <li><strong>Picking Step (Step 3):</strong> Longest cycle time; warehouse layout not optimized for distance</li>
+            <li><strong>Verification Step (Step 2):</strong> Manual checking creates delays when issues found</li>
+            <li><strong>Quality Check (Step 5):</strong> Currently only spot-checking; missing errors that progress to customers</li>
+        </ul>
+
+        <h3>Key Inputs to Monitor:</h3>
+        <ul>
+            <li>Inventory data accuracy (94% baseline)</li>
+            <li>Order specification completeness at receipt</li>
+            <li>Shipping deadline clarity</li>
+        </ul>
+
+        <h3>Success Metrics (CTSs) Aligned to SIPOC:</h3>
+        <ul>
+            <li><strong>CTS-1 (Cycle Time ≤ 2 days):</strong> Dependent on optimization of Steps 1-6, especially picking</li>
+            <li><strong>CTS-2 (Accuracy ≥ 99.5%):</strong> Dependent on verification (Step 2), picking accuracy (Step 3), quality check (Step 5)</li>
+            <li><strong>CTS-5 (Inventory Accuracy ≥ 99.8%):</strong> Dependent on supplier (inventory system) and process execution</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>PROCESS MEASUREMENT POINTS</h2>
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr style="background-color: #003366; color: white;">
+                <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Process Step</th>
+                <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Key Metrics to Track</th>
+                <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Current Baseline</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;"><strong>Step 1: Order Receipt</strong></td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Orders received/hour; Data completeness %</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">500 orders/day; 98% complete</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;"><strong>Step 2: Verification</strong></td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Verification time; % orders flagged; Resolution time</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">0.8 min/order; 3% flagged; 2 hours resolve</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;"><strong>Step 3: Picking</strong></td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Picking time; Picking accuracy; Lines picked/hour</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">2.1 min/order; 97%; 28 lines/hour</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;"><strong>Step 4: Packing</strong></td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Packing time; Packing accuracy; Orders/hour</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">0.6 min/order; 98%; 100/hour</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;"><strong>Step 5: QC</strong></td>
+                <td style="border: 1px solid #ddd; padding: 10px;">QC time; Defects found; First-pass yield</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">0.3 min/order; 2%; 92% FPY</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;"><strong>Step 6: Shipping</strong></td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Handoff time; Carrier pickup time; Tracking accuracy</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">0.2 min/order; 4 hours avg; 85% accurate</td>
+            </tr>
+            <tr style="background-color: #FFE4B5; font-weight: bold;">
+                <td style="border: 1px solid #ddd; padding: 10px;"><strong>TOTAL CYCLE TIME</strong></td>
+                <td style="border: 1px solid #ddd; padding: 10px;">End-to-end from receipt to shipment</td>
+                <td style="border: 1px solid #ddd; padding: 10px;"><strong>4.2 days</strong> (Target: 2.0 days)</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>PROCESS SCOPE DEFINITION</h2>
+        <p><span class="label">Start Point (Process Boundary):</span></p>
+        <p>Customer order entry into e-commerce system (order receipt trigger)</p>
+        
+        <p><span class="label">End Point (Process Boundary):</span></p>
+        <p>Order handed off to shipping carrier and tracking number provided to customer</p>
+        
+        <p><span class="label">Excluded from This SIPOC:</span></p>
+        <ul>
+            <li>Returns processing (separate process)</li>
+            <li>Customer service interactions (parallel process)</li>
+            <li>Carrier delivery (external service)</li>
+            <li>Payment processing (upstream process)</li>
+        </ul>
+    </div>
+
+    <div class="note">
+        <strong>Note:</strong> This SIPOC represents the high-level order fulfillment process. In the Measure Phase, this will be decomposed into lower-level SIPOCs for each critical subprocess (e.g., picking process, packing process) to identify detailed improvement opportunities.
+    </div>
+
+    <div style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #003366; font-size: 12px;">
+        <p><strong>Document Version:</strong> 1.0 | <strong>Date:</strong> December 2025</p>
+        <p><strong>Next Review:</strong> Measure Phase - decompose into subprocess SIPOCs</p>
+    </div>
+</body>
+</html>

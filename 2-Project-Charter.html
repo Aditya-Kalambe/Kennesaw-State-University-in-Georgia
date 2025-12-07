@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Charter - Order Processing Efficiency</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #333; }
+        .header { background-color: #003366; color: white; padding: 20px; border-radius: 5px; }
+        .section { margin: 20px 0; padding: 15px; background-color: #f5f5f5; border-left: 4px solid #003366; }
+        .section h2 { color: #003366; margin-top: 0; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #003366; color: white; }
+        .label { font-weight: bold; color: #003366; }
+        .footer { margin-top: 30px; padding-top: 20px; border-top: 2px solid #003366; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SIX SIGMA PROJECT CHARTER</h1>
+        <p>Order Processing Efficiency Improvement Project</p>
+    </div>
+
+    <div class="section">
+        <h2>1. BUSINESS CASE</h2>
+        <p><span class="label">Why This Project Is Important:</span></p>
+        <ul>
+            <li>Customer satisfaction declining due to delayed order delivery (currently 4.2 days vs. 2-day target)</li>
+            <li>18,000 orders annually delivered late, resulting in ~$450,000 in estimated lost revenue</li>
+            <li>Fulfillment accuracy at 92% creates returns processing burden and customer dissatisfaction</li>
+            <li>Competitor analysis shows market leaders achieving 2-day delivery and 99.5%+ accuracy</li>
+            <li>Market opportunity: 15% revenue increase if order-to-delivery reduced to 2 days with 99.5% accuracy</li>
+        </ul>
+        <p><span class="label">Business Goals for Success:</span></p>
+        <ul>
+            <li>Reduce average order processing cycle time from 4.2 days to 2.0 days (95% of orders)</li>
+            <li>Improve order fulfillment accuracy from 92% to 99.5% (first-pass yield)</li>
+            <li>Decrease customer complaint volume by 60%</li>
+            <li>Achieve 15% revenue increase from improved customer satisfaction and retention</li>
+            <li>Establish repeatable, sustainable process for maintaining these improvements</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>2. PROBLEM STATEMENT</h2>
+        <p><span class="label">Current Situation:</span></p>
+        <p>Order fulfillment process at our e-commerce distribution center takes an average of 4.2 business days from receipt to shipment. Customers expect delivery within 2 business days. Additionally, 8% of orders contain errors requiring correction or rework, resulting in customer complaints and processing delays.</p>
+        <p><span class="label">Impact:</span></p>
+        <p>These delays and errors directly reduce customer satisfaction, increase operational costs through rework, and result in estimated annual revenue loss of $450,000 from lost repeat customers and negative reviews.</p>
+    </div>
+
+    <div class="section">
+        <h2>3. PROJECT SCOPE</h2>
+        <p><span class="label">In Scope:</span></p>
+        <ul>
+            <li>Order receipt through shipping confirmation (main fulfillment process)</li>
+            <li>Inventory management and order picking accuracy</li>
+            <li>Packing and labeling processes</li>
+            <li>Shipping coordination and handoff</li>
+            <li>Basic returns processing (initial receipt and verification)</li>
+        </ul>
+        <p><span class="label">Out of Scope:</span></p>
+        <ul>
+            <li>Full returns processing workflow (may be separate Six Sigma project)</li>
+            <li>Customer service center operations</li>
+            <li>Transportation carrier performance (outside our control)</li>
+            <li>Supplier quality issues (handled separately)</li>
+        </ul>
+        <p><span class="label">Boundaries:</span></p>
+        <ul>
+            <li>Focus: Internal fulfillment center processes only</li>
+            <li>Geography: Main distribution center location</li>
+            <li>Exclusions: Cannot modify customer order system without IT governance approval</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. PROJECT CONSTRAINTS</h2>
+        <table>
+            <tr>
+                <th>Constraint Type</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td><strong>Budget</strong></td>
+                <td>$75,000 maximum (includes team time, software, training, pilot equipment)</td>
+            </tr>
+            <tr>
+                <td><strong>Timeline</strong></td>
+                <td>4 months (16 weeks) from charter to full implementation</td>
+            </tr>
+            <tr>
+                <td><strong>Resource Availability</strong></td>
+                <td>2 Green Belt practitioners (20% allocation), 1 Black Belt (40%), 3 process experts (15% each)</td>
+            </tr>
+            <tr>
+                <td><strong>System Changes</strong></td>
+                <td>No major IT system changes possible without 2-month lead time; focus on process optimization</td>
+            </tr>
+            <tr>
+                <td><strong>Staff Availability</strong></td>
+                <td>Peak holiday season (Oct-Dec) may impact team availability; plan around this</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>5. CURRENT PROCESS PERFORMANCE</h2>
+        <p><span class="label">Current State Metrics (Baseline):</span></p>
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Current State</th>
+                <th>Customer Requirement</th>
+                <th>Target (Project Goal)</th>
+            </tr>
+            <tr>
+                <td>Avg Order Processing Time</td>
+                <td>4.2 days</td>
+                <td>2.0 days</td>
+                <td>2.0 days (95% of orders)</td>
+            </tr>
+            <tr>
+                <td>First-Pass Yield (Accuracy)</td>
+                <td>92%</td>
+                <td>99.5%</td>
+                <td>99.5%</td>
+            </tr>
+            <tr>
+                <td>Order Fulfillment Accuracy</td>
+                <td>92%</td>
+                <td>99.5%</td>
+                <td>99.5%</td>
+            </tr>
+            <tr>
+                <td>Inventory Data Accuracy</td>
+                <td>94%</td>
+                <td>99%</td>
+                <td>99%</td>
+            </tr>
+            <tr>
+                <td>Customer Satisfaction Score</td>
+                <td>6.8/10</td>
+                <td>9.0/10</td>
+                <td>9.0/10</td>
+            </tr>
+            <tr>
+                <td>Annual Orders Late</td>
+                <td>18,000</td>
+                <td>0 (or &lt;1%)</td>
+                <td>&lt;5% (9,000)</td>
+            </tr>
+        </table>
+        <p><span class="label">Performance Drivers (Why Current State Exists):</span></p>
+        <ul>
+            <li>Manual order entry creates data entry errors</li>
+            <li>Inventory locations not optimized; pickers travel excessive distances</li>
+            <li>Lack of quality checks before shipping</li>
+            <li>Warehouse management system outdated (10+ years old)</li>
+            <li>Staff turnover creates inconsistent processes</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. CUSTOMER REQUIREMENTS & SPECIFICATIONS</h2>
+        <p><span class="label">Voice of Customer (from 5 key customer interviews and 12 survey responses):</span></p>
+        <table>
+            <tr>
+                <th>Customer Requirement</th>
+                <th>Importance</th>
+                <th>Internal Translation (CTS)</th>
+            </tr>
+            <tr>
+                <td>"I need my order within 2 days"</td>
+                <td>Critical (95% of customers)</td>
+                <td>Cycle time ≤ 2 days</td>
+            </tr>
+            <tr>
+                <td>"Orders should arrive complete and correct"</td>
+                <td>Critical (98% of customers)</td>
+                <td>First-pass yield ≥ 99.5%</td>
+            </tr>
+            <tr>
+                <td>"I want to know where my order is"</td>
+                <td>High (85% of customers)</td>
+                <td>Real-time order tracking accuracy ≥ 99%</td>
+            </tr>
+            <tr>
+                <td>"Returns should be easy and hassle-free"</td>
+                <td>High (72% of customers)</td>
+                <td>Return process time ≤ 1 day</td>
+            </tr>
+            <tr>
+                <td>"I rely on your inventory information being accurate"</td>
+                <td>High (68% of customers)</td>
+                <td>Inventory accuracy ≥ 99.8%</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>7. PROJECT TEAM STRUCTURE</h2>
+        <table>
+            <tr>
+                <th>Role</th>
+                <th>Name</th>
+                <th>Responsibility</th>
+                <th>Allocation</th>
+            </tr>
+            <tr>
+                <td>Executive Sponsor</td>
+                <td>VP Operations</td>
+                <td>Executive oversight, resource allocation, governance</td>
+                <td>5%</td>
+            </tr>
+            <tr>
+                <td>Project Manager / Black Belt</td>
+                <td>Designation</td>
+                <td>Overall project leadership, methodology, timeline</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Green Belt Lead</td>
+                <td>Designation</td>
+                <td>Data analysis, process mapping, statistical analysis</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Green Belt (Secondary)</td>
+                <td>Designation</td>
+                <td>Data collection, documentation, process improvement</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Warehouse Manager</td>
+                <td>Designation</td>
+                <td>Process expert, operational input, staff coordination</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>IT Specialist</td>
+                <td>Designation</td>
+                <td>System configuration, data extraction, technical support</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>Process Analyst</td>
+                <td>Designation</td>
+                <td>Current state documentation, process measurement, baseline</td>
+                <td>15%</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>8. PROJECT TIMELINE & MILESTONES</h2>
+        <table>
+            <tr>
+                <th>Phase</th>
+                <th>Timeline</th>
+                <th>Key Milestones</th>
+            </tr>
+            <tr>
+                <td><strong>Define</strong></td>
+                <td>Weeks 1-3</td>
+                <td>Charter approved, CTS identified, stakeholders engaged</td>
+            </tr>
+            <tr>
+                <td><strong>Measure</strong></td>
+                <td>Weeks 4-6</td>
+                <td>Baseline metrics validated, process mapped, data collection plan ready</td>
+            </tr>
+            <tr>
+                <td><strong>Analyze</strong></td>
+                <td>Weeks 7-9</td>
+                <td>Root causes identified, hypotheses validated, improvement opportunities prioritized</td>
+            </tr>
+            <tr>
+                <td><strong>Improve</strong></td>
+                <td>Weeks 10-14</td>
+                <td>Solutions designed, pilot tested, results verified, full implementation ready</td>
+            </tr>
+            <tr>
+                <td><strong>Control</strong></td>
+                <td>Weeks 15-16</td>
+                <td>Controls implemented, staff trained, documentation complete, project closed</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>9. EXPECTED BENEFITS</h2>
+        <p><span class="label">Quantified Benefits (Annualized):</span></p>
+        <ul>
+            <li><strong>Revenue Recovery:</strong> $450,000 from eliminated late orders</li>
+            <li><strong>Revenue Growth:</strong> $200,000+ from improved customer satisfaction and retention</li>
+            <li><strong>Cost Reduction:</strong> $150,000 from reduced rework and error handling</li>
+            <li><strong>Operational Efficiency:</strong> $50,000 from optimized labor allocation</li>
+            <li><strong>Total Annual Benefit:</strong> $850,000 - $1.2 million</li>
+            <li><strong>Project ROI:</strong> 1,133% to 1,600% (benefit-to-cost ratio: 11:1 to 16:1)</li>
+        </ul>
+        <p><span class="label">Intangible Benefits:</span></p>
+        <ul>
+            <li>Improved employee morale and engagement through visible improvement</li>
+            <li>Enhanced company reputation and brand loyalty</li>
+            <li>Reduced customer complaint volume and improved Net Promoter Score (NPS)</li>
+            <li>Foundation for continuous improvement culture</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>10. APPROVAL & AUTHORIZATION</h2>
+        <table>
+            <tr>
+                <th>Role</th>
+                <th>Name</th>
+                <th>Signature</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>Executive Sponsor</td>
+                <td>VP Operations</td>
+                <td>_____________</td>
+                <td>_____________</td>
+            </tr>
+            <tr>
+                <td>Project Manager / Black Belt</td>
+                <td>Designation</td>
+                <td>_____________</td>
+                <td>_____________</td>
+            </tr>
+            <tr>
+                <td>Finance Approval</td>
+                <td>Finance Director</td>
+                <td>_____________</td>
+                <td>_____________</td>
+            </tr>
+            <tr>
+                <td>HR / Resource Approval</td>
+                <td>HR Manager</td>
+                <td>_____________</td>
+                <td>_____________</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p><strong>Document Version:</strong> 1.0 | <strong>Date:</strong> December 2025</p>
+        <p><strong>Next Review Date:</strong> End of Measure Phase (Week 6)</p>
+        <p><strong>Distribution:</strong> Executive Sponsor, Project Team, Finance, Operations, IT</p>
+    </div>
+</body>
+</html>
