@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Failure Modes and Effects Analysis (FMEA)</title>
+</head>
+<body>
+  <h1>FMEA for the Support Call Process</h1>
+
+  <h2>Purpose</h2>
+  <p>
+    FMEA is a structured way to list how each step in a process can fail,
+    what the effect would be, and how likely and detectable that failure is.
+    We then calculate a Risk Priority Number (RPN) to focus on the most
+    important items. [web:594][web:597][web:598]
+  </p>
+
+  <h2>Simple FMEA Table</h2>
+  <table border="1" cellpadding="4" cellspacing="0">
+    <tr>
+      <th>Process Step</th>
+      <th>Failure Mode</th>
+      <th>Effect</th>
+      <th>Cause</th>
+      <th>S (1–10)</th>
+      <th>O (1–10)</th>
+      <th>D (1–10)</th>
+      <th>RPN = S×O×D</th>
+    </tr>
+    <tr>
+      <td>Identify request</td>
+      <td>Agent misunderstands main issue</td>
+      <td>Long call, wrong solution</td>
+      <td>Poor listening, no probing questions</td>
+      <td>7</td>
+      <td>4</td>
+      <td>4</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>Research / Resolve</td>
+      <td>Agent cannot find correct article</td>
+      <td>Customer on hold, possible wrong answer</td>
+      <td>Slow, cluttered knowledge base</td>
+      <td>8</td>
+      <td>6</td>
+      <td>5</td>
+      <td>240</td>
+    </tr>
+    <tr>
+      <td>Transfer</td>
+      <td>Unnecessary transfer</td>
+      <td>Longer call, customer frustration</td>
+      <td>Unclear policy on billing ownership</td>
+      <td>8</td>
+      <td>5</td>
+      <td>5</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Wrap‑up</td>
+      <td>Inaccurate notes</td>
+      <td>Follow‑up calls, rework</td>
+      <td>Rushed documentation</td>
+      <td>6</td>
+      <td>4</td>
+      <td>6</td>
+      <td>144</td>
+    </tr>
+  </table>
+
+  <h2>Interpretation</h2>
+  <p>
+    The highest RPNs are for “cannot find correct article” and “unnecessary
+    transfer.” These match the earlier Cause &amp; Effect work and support the
+    decision to focus first on knowledge base improvements and clearer billing
+    policies in the Improve phase.
+  </p>
+</body>
+</html>

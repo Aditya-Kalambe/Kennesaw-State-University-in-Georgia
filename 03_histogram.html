@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Histogram and Graphical Analysis - AHT</title>
+</head>
+<body>
+  <h1>Histogram and Graphical Analysis</h1>
+
+  <h2>Data Used</h2>
+  <p>
+    We took a simple sample of 100 calls from the last two weeks and recorded
+    the Average Handle Time (AHT) for each call in minutes.
+  </p>
+
+  <h2>Histogram Description</h2>
+  <p>
+    Instead of plotting the actual chart here, this document describes it in
+    words so it is easy to recreate in Excel:
+  </p>
+  <ul>
+    <li>0–4 minutes: 5 calls</li>
+    <li>4–6 minutes: 20 calls</li>
+    <li>6–8 minutes: 35 calls</li>
+    <li>8–10 minutes: 25 calls</li>
+    <li>10–12 minutes: 10 calls</li>
+    <li>12–20 minutes: 5 calls</li>
+  </ul>
+  <p>
+    This shape looks roughly like a peak around 6–8 minutes with a smaller
+    “tail” of very long calls up to 20 minutes. Histograms are standard tools
+    in Six Sigma to show how data is distributed and to make long‑tail issues
+    visible. [web:598][web:605]
+  </p>
+
+  <h2>Box Plot Description</h2>
+  <p>
+    A simple box plot of AHT by call type (general, billing, refund, technical)
+    shows higher medians and more spread for billing and refund calls. This
+    supports the idea that these call types deserve special focus in the
+    Improve phase.
+  </p>
+
+  <h2>Key Insights</h2>
+  <ul>
+    <li>Most calls finish in under 10 minutes, so not every part of the process is broken.</li>
+    <li>A small number of very long calls have a big impact on the average.</li>
+    <li>Billing and refund calls have clearly higher AHT and more variability.</li>
+  </ul>
+  <p>
+    In the Analyze phase, graphs like histograms and box plots help translate
+    raw data into simple pictures that everyone on the team can understand. [web:598][web:605]
+  </p>
+</body>
+</html>

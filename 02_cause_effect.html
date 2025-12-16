@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cause and Effect Analysis - High AHT</title>
+</head>
+<body>
+  <h1>Cause &amp; Effect Analysis for High Average Handle Time</h1>
+
+  <h2>Problem Statement</h2>
+  <p>
+    Average Handle Time (AHT) in the support center has increased to about
+    9 minutes per call. This analysis aims to list and organize potential
+    causes before we test them with data. Fishbone (Ishikawa) diagrams and
+    Why‑Why questions are common root‑cause tools in the Analyze phase. [web:595][web:608]
+  </p>
+
+  <h2>Fishbone Categories and Potential Causes</h2>
+
+  <h3>People</h3>
+  <ul>
+    <li>New agents are not fully confident on complex topics.</li>
+    <li>Senior agents get many escalations and are overloaded.</li>
+    <li>Different agents use different call flows.</li>
+  </ul>
+
+  <h3>Process</h3>
+  <ul>
+    <li>Call flow is not documented in one simple place.</li>
+    <li>Many calls are transferred between “general” and “billing” queues.</li>
+    <li>Wrap‑up notes are long and sometimes duplicated in two systems.</li>
+  </ul>
+
+  <h3>Technology</h3>
+  <ul>
+    <li>Knowledge base search is slow and results are not well ranked.</li>
+    <li>Agents switch between three systems to see full customer history.</li>
+    <li>Occasional “system not responding” errors cause re‑entry of data.</li>
+  </ul>
+
+  <h3>Policy / Measurement</h3>
+  <ul>
+    <li>Agents are told “never leave a question unanswered” but have no time limits.</li>
+    <li>Quality reviews focus on call friendliness more than call efficiency.</li>
+    <li>No clear rule on when to transfer versus when to own a case.</li>
+  </ul>
+
+  <h2>Why‑Why Mini‑Chains</h2>
+
+  <h3>Example 1: Long “research” time</h3>
+  <ol>
+    <li>Why are research steps long? → Agents take time to find the right article.</li>
+    <li>Why is it hard to find the right article? → Search results show many outdated entries.</li>
+    <li>Why are outdated entries still shown? → There is no regular review or archive process.</li>
+  </ol>
+
+  <h3>Example 2: Many transfers</h3>
+  <ol>
+    <li>Why are there many transfers? → Agents are unsure if they are allowed to resolve billing issues.</li>
+    <li>Why are they unsure? → Policy is vague and training examples are limited.</li>
+    <li>Why is policy vague? → The billing process changed, but training material was not updated.</li>
+  </ol>
+
+  <h2>Data Collected to Check Causes</h2>
+  <p>
+    To avoid guessing, the team collected a small but focused data set of 50 calls:
+  </p>
+  <ul>
+    <li>Call type (general question, billing, refund, technical).</li>
+    <li>AHT for each call.</li>
+    <li>Whether the call was transferred (yes/no).</li>
+    <li>Number of times the agent opened the knowledge base.</li>
+  </ul>
+
+  <h2>How the Data Was Interpreted</h2>
+  <p>
+    Simple averages showed that:
+  </p>
+  <ul>
+    <li>Calls with at least one transfer were on average 4 minutes longer.</li>
+    <li>Billing and refund calls had the highest average AHT.</li>
+    <li>Calls where the agent opened the knowledge base more than 3 times
+        were almost always in the “long call” group.</li>
+  </ul>
+  <p>
+    These patterns support the earlier Why‑Why ideas: unclear ownership of
+    billing questions and slow or hard‑to‑use knowledge search are strong
+    candidates for real root causes.
+  </p>
+</body>
+</html>

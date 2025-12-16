@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Executive Summary - Analyze Phase</title>
+</head>
+<body>
+  <h1>Six Sigma Project – Analyze Phase</h1>
+  <h2>Project Title</h2>
+  <p>Reducing Average Handle Time in the Customer Support Team</p>
+
+  <h2>Business Context</h2>
+  <p>
+    Our support team handles phone and chat inquiries for a small online retailer.
+    Over the past six months, Average Handle Time (AHT) has increased from about
+    6 minutes to about 9 minutes, while customer satisfaction scores have dropped.
+    This hurts customer experience and increases staffing costs.
+  </p>
+
+  <h2>Goal of the Analyze Phase</h2>
+  <p>
+    In the Measure phase we confirmed that AHT is high and unstable. In the Analyze
+    phase, the goal is to understand why AHT is high and which causes matter most,
+    using simple but structured tools:
+    Cause &amp; Effect analysis, graphical analysis, basic statistics, 8 wastes,
+    Cost of Poor Quality, and FMEA. [Based on DMAIC Analyze guidance][web:601]
+  </p>
+
+  <h2>Summary of Key Findings by Deliverable</h2>
+
+  <h3>Cause &amp; Effect / Why‑Why</h3>
+  <p>
+    Using a simple fishbone (Ishikawa) diagram, the team grouped potential causes
+    of high AHT into People, Process, Technology, and Policy. The Why‑Why discussion
+    highlighted three likely root causes:
+  </p>
+  <ul>
+    <li>Inconsistent call handling steps between agents.</li>
+    <li>Slow knowledge search in the help system.</li>
+    <li>Too many transfers for billing and refund questions.</li>
+  </ul>
+
+  <h3>Histogram / Graphical Analysis</h3>
+  <p>
+    A histogram of AHT shows a long right tail: most calls are around 6–8 minutes,
+    but a smaller group of calls takes 15–20 minutes. This suggests that a minority
+    of “long” calls are pulling the average up. Histograms are commonly used in the
+    Analyze phase to understand data distribution and variation. [web:598][web:605]
+  </p>
+
+  <h3>Process and Statistical Analysis</h3>
+  <p>
+    A simple process map shows the typical path: Welcome → Identify Request →
+    Authenticate → Research / Resolve → Wrap‑up. Time checks on 50 recent calls
+    show that “Research / Resolve” and “Transfers” are where time is lost. Basic
+    descriptive statistics confirm that calls with a transfer average about
+    4 minutes longer than calls without a transfer.
+  </p>
+
+  <h3>Eight Wastes (Value‑Added Analysis)</h3>
+  <p>
+    Using the Lean “8 wastes” view (TIMWOODS), the team found clear examples of
+    Waiting (agents waiting on slow systems), Overprocessing (double documentation),
+    Motion (switching between many screens), and Skills waste (senior agents doing
+    simple password resets). [web:599][web:549][web:546]
+  </p>
+
+  <h3>Cost of Poor Quality (COPQ)</h3>
+  <p>
+    Cost of Poor Quality was estimated by looking at:
+  </p>
+  <ul>
+    <li>Extra agent time on long calls (internal failure cost).</li>
+    <li>Lost sales due to abandoned calls (external failure cost).</li>
+  </ul>
+  <p>
+    If each extra minute costs ₹15 in staffing and about 2,000 calls per month run
+    3 minutes longer than needed, that alone is roughly ₹90,000 per month in avoidable
+    internal cost. COPQ is the standard way to show how quality issues turn into real
+    money. [web:600][web:602][web:604]
+  </p>
+
+  <h3>FMEA (Failure Modes and Effects Analysis)</h3>
+  <p>
+    A simple FMEA table was built for key steps in the call flow. For each step we
+    listed failure modes (for example “Agent cannot find the correct answer”), effects
+    (“Customer waits on hold”), and causes (“Knowledge base search is slow or unclear”),
+    and then rated Severity, Occurrence, and Detection to get an RPN. High RPN items
+    were:
+  </p>
+  <ul>
+    <li>Knowledge base too slow or outdated.</li>
+    <li>Transfers due to unclear ownership of billing issues.</li>
+    <li>Inconsistent call wrap‑up notes causing rework.</li>
+  </ul>
+  <p>
+    FMEA is commonly used in Six Sigma to prioritize risks and focus improvement
+    work where it matters most. [web:594][web:597][web:598]
+  </p>
+
+  <h3>Summary of Next Steps</h3>
+  <p>
+    Based on the above tools, the Analyze phase points clearly to a few high‑impact
+    root cause themes: long “research” time, excessive transfers, and waste built
+    into the process. The next steps focus on testing targeted improvements in the
+    Improve phase (see separate “Summary of Next Steps” document).
+  </p>
+
+  <h2>Overarching Questions</h2>
+
+  <h3>a) Was there appropriate use of tools?</h3>
+  <p>
+    Yes. The project uses standard Analyze‑phase tools: cause &amp; effect analysis,
+    graphical analysis, simple statistics, Lean waste analysis, COPQ, and FMEA. These
+    are all widely recommended for finding root causes before jumping to solutions.
+    [web:594][web:596]
+  </p>
+
+  <h3>b) Tools beyond the required ones</h3>
+  <p>
+    Beyond the required tools, a basic Pareto view of “reasons for long calls” was
+    used informally to see which call types most often run over 15 minutes. This
+    helped focus later analysis on billing and refund calls instead of all call
+    types. Pareto analysis is a common, simple way to focus on the “vital few”
+    issues. [web:594][web:598]
+  </p>
+
+  <h3>c) Is the project ready to move to Improve?</h3>
+  <p>
+    The project is ready to move to the Improve phase. We have:
+  </p>
+  <ul>
+    <li>A clear problem: high AHT driven by a small group of very long calls.</li>
+    <li>Plausible and verified causes: slow research, transfers, and process waste.</li>
+    <li>Prioritized risks through FMEA and a first estimate of COPQ.</li>
+  </ul>
+
+  <h3>d) If not fully ready, what recovery measures are needed?</h3>
+  <p>
+    Before large‑scale rollout, we still need:
+  </p>
+  <ul>
+    <li>One more week of data that tags each call with “reason” and “transfer yes/no”.</li>
+    <li>A small pilot test of a faster knowledge base search for 3–5 agents.</li>
+  </ul>
+  <p>
+    These actions can be done within 2–3 weeks and will reduce risk when changes
+    are rolled out to the whole team.
+  </p>
+
+  <h3>e) Does the charter, problem, or scope need refinement?</h3>
+  <p>
+    Yes, the scope should be refined to focus first on billing and refund calls,
+    because these show the highest AHT and most transfers. The new problem
+    statement can be: “Reduce AHT for billing and refund calls by 2 minutes within
+    three months, while maintaining customer satisfaction.” Narrowing the scope
+    makes the Improve phase more realistic for a small team.
+  </p>
+</body>
+</html>
